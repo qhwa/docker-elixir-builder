@@ -3,7 +3,7 @@ FROM elixir:1.9-alpine
 COPY --from=roffe/kubectl /usr/local/bin/kubectl /usr/local/bin/kubectl
 
 ARG apk_mirror=dl-cdn.alpinelinux.org
-ARG hex_mirror=repo.hex.pm
+ARG hex_mirror=https://repo.hex.pm
 
 RUN sed -i \
   s/dl-cdn.alpinelinux.org/$apk_mirror/g \
