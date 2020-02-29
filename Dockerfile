@@ -1,4 +1,4 @@
-FROM elixir:1.9-alpine
+FROM elixir:1.10-alpine
 
 COPY --from=roffe/kubectl /usr/local/bin/kubectl /usr/local/bin/kubectl
 
