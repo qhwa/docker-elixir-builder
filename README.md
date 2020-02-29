@@ -12,6 +12,14 @@ This docker image contains following softwares:
 
 They are used for CI/CD processes.
 
+## Usage
+
+```sh
+docker pull qhwa/elixir-builder:latest
+docker pull qhwa/elixir-builder:1.10
+docker pull qhwa/elixir-builder:1.9
+```
+
 ## License
 
 This project is open source under MIT license.
