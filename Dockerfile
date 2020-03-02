@@ -1,7 +1,5 @@
 FROM elixir:1.10-alpine
 
-COPY --from=roffe/kubectl /usr/local/bin/kubectl /usr/local/bin/kubectl
-
 ARG apk_mirror=dl-cdn.alpinelinux.org
 ARG hex_mirror=https://repo.hex.pm
 
@@ -26,7 +24,7 @@ RUN apk update --no-cache && \
     pngquant \
     docker
 
-# Glibc for applications such as appsignal
+# Glibc for NIF applications
 # @see https://docs.appsignal.com/elixir/why-nif.html
 # @see https://github.com/jeanblanchard/docker-alpine-glibc/blob/master/Dockerfile
 ENV GLIBC_VERSION 2.30-r0

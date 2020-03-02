@@ -6,7 +6,6 @@ This docker image contains following softwares:
 * Erlang and OTP
 * Nodejs
 * docker
-* kubectl
 * hex
 * rebar
 
