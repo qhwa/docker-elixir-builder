@@ -1,4 +1,4 @@
-FROM elixir:1.11-alpine
+FROM elixir:1.12-alpine
 
 ARG apk_mirror=dl-cdn.alpinelinux.org
 ARG hex_mirror=https://repo.hex.pm
